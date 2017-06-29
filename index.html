@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/journal/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="urban.css">
 	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
 	<script src="js\bootstrap.min.js"></script>
 	<title></title>
 </head>
 
 <body>
-<div class= "container">
+<div class= "container-fluid">
+
 	<div class="row">	
-		<div class="col-md-2" >
+		<div class="col-md-1" >
 			<center>ART LEGEND </center>
 		</div>
-		<div class="col-md-10" style="background-color: pink">
-			<div class="column">
-				<div class="col-md-2">
-					<p>HOME</p>
-				</div>
-				<div class="col-md-2">
-					<p>PROFILE</p>
-				</div>
-				<div class="col-md-2">
-					<p>BLOG</p>
-				</div>
-				<div class="col-md-2">
-					<p>PRODUCT EXAMPLES</p>
-				</div>
-				<div class="col-md-2">
-					<p>SHOP</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12" style="background-color: green">
-		<p>BOOOOOO</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-2" style="background-color: yellow">
-			<p>A</p>
-		</div>
-		<div class="col-md-8" style="background-color: orange">
-			<p>B</p>
-		</div>
-		<div class="col-md-2" style="background-color: yellow">
-			<p>C</p>
-		</div>
-	</div>
+		<div class="col-md-11">
+	<nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Project Examples</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-md-2"><img src="./img/home1.jpg" height="320px" width="320px"/></div>
+    <div class="col-md-2"><img src="./img/home2.jpg" height="320px" width="320px"/></div>
+    <div class="col-md-2">Title Test</div>
+    <div class="col-md-2">Title Test</div>
+    <div class="col-md-2">Title Test</div>
+    <div class="col-md-2">Title Test</div>
+</div>
+
 </div>
 </body>
 </html>
