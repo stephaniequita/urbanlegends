@@ -1,6 +1,14 @@
 
 <!DOCTYPE html>
 <html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
 <head>
   <link rel="stylesheet" type="text/css" href="https://bootswatch.com/journal/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="urban.css">
@@ -44,6 +52,43 @@
       </form>
     </div>
   </nav>
-</body>
 
+  <!-- For jumbotron(Heading) -->
+    <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <h1>Jumbotron</h1>
+        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+      </div>
+    </div>
+    </div>
+  <!-- For jumbotron (Heading) -END- -->
+
+
+  <div class="w3-content" style="max-width:700px">
+    <img src="./img/home1.jpg" class="mySlides" style="width:100%">
+    <img src="./img/home2.jpg" class="mySlides" style="width:100%">
+    <img src="./img/home3.jpg" class="mySlides" style="width:100%">
+  
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+  }
+  </script>
+
+</body>
 </html>
